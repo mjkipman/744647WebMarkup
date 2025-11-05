@@ -549,6 +549,13 @@
         height: 20px;
     }
 
+    fieldset {
+        border: none;       /* Remove border */
+        margin: 0;          /* Remove margin */
+        padding: 0;         /* Remove padding */
+        display: contents;  /* Makes children behave as if fieldset isn’t there */
+    }
+
     /* ------------------------------------------------------------------------------------- */
     /* ------------------------------------ M O B I L E ------------------------------------ */
 

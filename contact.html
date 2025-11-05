@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a class="headerImageArea" href="index.html"><img class="headerImage" src="img/logo.png" alt="??????"></a>
+        <a class="headerImageArea" href="index.html"><img class="headerImage" src="img/logo.png" title="Website logo" alt="Een kop koffie als logo voor de website"></a>
         <!-- Voor Desktop: -->
         <button class="headerButton buttonColour" onclick="location.href='index.html'">Home</button>
         <button class="headerButton buttonColour" onclick="location.href='waarom.html'">Waarom</button>
@@ -47,6 +47,8 @@
 
     <section class="contactSection">
         <form class="formContact" action="/submit" method="POST">
+            <fieldset>
+            <legend class="buttonColourContact">Contactformulier</legend>
             <label class="stylingContact labelContact buttonColourContact" for="name">*Naam:</label>
             <input class="stylingContact inputContact" placeholder="John Smith" type="text" id="name" name="name" required>
 
@@ -61,8 +63,9 @@
                     <input class="contactCheckbox" type="checkbox" name="subscribe" value="yes" required>
                 </label>
                 <H3 class="contactBoxText">*Ik ga akkoord met de Gebruikersvoorwaarden</H3>
-                <button class="contactButton" type="submit"><h2 class="buttonColour">Send</h2 ></button>
+                <button class="contactButton buttonColour" type="submit">Send</button>
             </section>
+        </fieldset>
         </form>        
     </section>
     <!-- Einde content -->
@@ -70,7 +73,7 @@
 
     <footer>
         <a></a>
-        <a class="footerImageArea" href="index.html"><img class="footerImageArea" src="img/logo.png" alt="None"></a>
+        <a class="footerImageArea" href="index.html"><img class="footerImageArea" src="img/logo.png" title="Website logo" alt="Een kop koffie als logo voor de website"></a>
         <section class="footerField footerFieldNavigatie">
             <h3 class="footerFieldHead">Navigatie</h3>
                 <ol class="footerList">
@@ -87,15 +90,15 @@
                     <li><a href="contact.html">Contact</a></li>
                     <li><a target="_blank" href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/privacyregels-beschermen-persoonsgegevens">Privacyvoorwaarden</a></li>
                 </ol>
-                <p>© 2025 [744647]. All rights reserved.</p>
+                <p>&copy; 2025 [744647]. All rights reserved.</p>
         </section>
         <section class="footerField footerFieldSocials">
             <h3 class="footerFieldHead">Bezoek de socials</h3>
             <section class="footerSocialsImageSection">
-                <a href="https://x.com" target="_blank"><img class="footerSocialsImage" src="img/IconX.png" alt=""></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="footerSocialsImage" src="img/IconInstagram.png" alt=""></a>
-                <a href="https://www.youtube.com" target="_blank"><img class="footerSocialsImage" src="img/IconYoutube.png" alt=""></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="footerSocialsImage" src="img/IconLinkedin.png" alt=""></a>
+                <a href="https://x.com" target="_blank"><img class="footerSocialsImage" src="img/IconX.png" title="X logo" alt="Het logo van sociale media site X"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="footerSocialsImage" src="img/IconInstagram.png" title="Instagram logo" alt="Het logo van sociale media site instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img class="footerSocialsImage" src="img/IconYoutube.png" title="Youtube logo" alt="Het logo van sociale media site Youtube"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="footerSocialsImage" src="img/IconLinkedin.png" title="LinkedIn Logo" alt="Het logo van sociale media site LinkedIn"></a>
             </section>
         </section>
     </footer>
