@@ -1,5 +1,5 @@
 Student name: Milo Wassenaar
 Student number: 744647
 Student class: INF25VT1A
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/mjkipman/744647WebMarkup
+GitHub Pages URL: https://mjkipman.github.io/744647WebMarkup/index.html

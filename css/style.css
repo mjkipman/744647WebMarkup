@@ -226,6 +226,15 @@
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 28px;
     }
+
+    .buttonColourContact {
+        color: #4D3430;
+        text-decoration: none;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     em {
         color: #f8f8f8;
     }

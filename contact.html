@@ -12,18 +12,18 @@
     <header>
         <a class="headerImageArea" href="index.html"><img class="headerImage" src="img/logo.png" alt="??????"></a>
         <!-- Voor Desktop: -->
-        <button class="headerButton buttonColour buttonColour" onclick="location.href='index.html'">Home</button>
-        <button class="headerButton buttonColour buttonColour" onclick="location.href='waarom.html'">Waarom</button>
-        <button class="headerButton buttonColour buttonColour" onclick="location.href='brouwen.html'">Brouwen</button>
-        <button class="headerButton buttonColour buttonColour" onclick="location.href='bonen.html'">Bonen</button>
-        <button class="headerButton buttonColour buttonColour" onclick="location.href='malen.html'">Malen</button>
+        <button class="headerButton buttonColour" onclick="location.href='index.html'">Home</button>
+        <button class="headerButton buttonColour" onclick="location.href='waarom.html'">Waarom</button>
+        <button class="headerButton buttonColour" onclick="location.href='brouwen.html'">Brouwen</button>
+        <button class="headerButton buttonColour" onclick="location.href='bonen.html'">Bonen</button>
+        <button class="headerButton buttonColour" onclick="location.href='malen.html'">Malen</button>
         <a></a>
         <button class="headerButton buttonColour buttonColour headerButtonCurrent" onclick="location.href='contact.html'">Contact</button>
         <!-- Dropdown voor mobile -->
         <nav class="nav" aria-label="Main">
             <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="headerButtonDropdown">
-                <a class="buttonColour">Contact</h2>
+                <a class="buttonColour">Contact</a>
                 <a class="buttonColour">☰</a>
             </label>
             <ul class="menu">
@@ -47,13 +47,13 @@
 
     <section class="contactSection">
         <form class="formContact" action="/submit" method="POST">
-            <label class="stylingContact labelContact" for="name"><h3>*Naam:</h3></label>
+            <label class="stylingContact labelContact buttonColourContact" for="name">*Naam:</label>
             <input class="stylingContact inputContact" placeholder="John Smith" type="text" id="name" name="name" required>
 
-            <label class="stylingContact labelContact" for="email"><h3>*Email:</h3></label>
+            <label class="stylingContact labelContact buttonColourContact" for="email">*Email:</label>
             <input class="stylingContact inputContact" placeholder="j.smith@gmail.com" type="email" id="email" name="email" required>
 
-            <label class="stylingContact labelContact" for="message"><h3>*Bericht:</h3></label>
+            <label class="stylingContact labelContact buttonColourContact" for="message">*Bericht:</label>
             <textarea class="stylingContact messageContact" placeholder="Mijn bericht aan KoffieSite..." id="message" name="message" rows="5" cols="30" required></textarea>
 
             <section class="contactUnderside">
