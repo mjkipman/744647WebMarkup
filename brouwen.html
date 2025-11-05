@@ -1,0 +1,114 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoffieSite | Brouwen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <a class="headerImageArea" href="index.html"><img class="headerImage" src="img/logo.png" alt="??????"></a>
+        <!-- Voor Desktop: -->
+        <button class="headerButton" onclick="location.href='index.html'"><h2 class="buttonColour">Home</h2></button>
+        <button class="headerButton" onclick="location.href='waarom.html'"><h2 class="buttonColour">Waarom</h2 ></button>
+        <button class="headerButton headerButtonCurrent" onclick="location.href='brouwen.html'"><h2 class="buttonColour">Brouwen</h2></button>
+        <button class="headerButton" onclick="location.href='bonen.html'"><h2 class="buttonColour">Bonen</h2></button>
+        <button class="headerButton" onclick="location.href='malen.html'"><h2 class="buttonColour">Malen</h2></button>
+        <a></a>
+        <button class="headerButton" onclick="location.href='contact.html'"><h2 class="buttonColour">Contact</h2></button>
+        <!-- Dropdown voor mobile -->
+        <nav class="nav" aria-label="Main">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="headerButtonDropdown">
+                <h2 class="buttonColour">Brouwen</h2>
+                <h2 class="buttonColour">☰</h2>
+            </label>
+            <ul class="menu">
+                <li><a class="buttonColour" href="index.html"><em>Home</em></a></li>
+                <li><a class="buttonColour" href="waarom.html"><em>Waarom</em></a></li>
+                <li><a class="buttonColour" href="brouwen.html"><em>Brouwen</em></a></li>
+                <li><a class="buttonColour" href="bonen.html"><em>Bonen</em></a></li>
+                <li><a class="buttonColour" href="malen.html"><em>Malen</em></a></li>
+                <li><a class="buttonColour" href="contact.html"><em>Contact</em></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- De content -->
+     <aside class="asideAdSpace"></aside> <!-- Plek voor advertenties -->
+     <section class="introductionContainer position1">
+        <h1 class="">Koffiezet Methoden</h1>
+        <h2 class="">Er zijn veel manieren om koffie te maken en een hoop speciale apparaten die gebruikt kunnen worden om dat perfecte kopje te zetten. Hoewel we ze daarom natuurlijk niet allemaal op een pagina kunnen zetten, kunnen we het wel hebben over een paar van de meest gebruikte apparaten en methodes.</h2>
+    </section>
+
+    <section class="contentSection position2">
+        <article class="contentText textLeft">
+            <h2 class="contentHeading">French Press</h2>
+            <h3 class="contentFont centerContent">De French Press, ook wel cafetière genoemd, is een toegankelijk en beginnersvriendelijk apparaat om koffie mee te zetten. In de French Press doet men grof gemaalde bonen in kokend water en laat dit 3 à 5 minuten trekken. Hierna wordt met een metalen filter langzaam naar beneden geduwd om zo het koffiedik te scheiden van de koffie zelf. </h3>
+            <h3 class="contentFont centerContent">Het produceert een koffie die vol en rijk van smaak is, en vaak wat romiger van aard. Ook kan men al vaak rond de 20 euro een cafetière aanschaffen, wat samen met het gemak van gebruik een goede keuze maakt voor wie begint in de koffiewereld.</h3>
+        </article>
+        <section class="contentImg imgRight">
+            <img src="img/FrenchPress.png" alt="">
+        </section>
+    </section>
+
+    <section class="contentSection position3">
+        <section class="contentImg imgLeft">
+            <img src="img/MokaPot.png" alt="">
+        </section>
+        <article class="contentText textRight">
+            <h2 class="contentHeading">Moka-pot (percolator)</h2>
+            <h3 class="contentFont centerContent">De Moka-pot, of percolator, is een klassiek Italiaans apparaat om koffie mee te zetten. Het bestaat uit drie onderdelen: de onderzijde, waar (kokend) water in wordt gedaan; het filterbakje, waar men de bonen in doet; en tenslotte de bovenkant, waar de koffie uitkomt.</h3>
+            <h3 class="contentFont centerContent">De percolator is lastiger om mee te werken, en de temperatuur goed houden terwijl hij op de kookplaat staat, kan uitdagend zijn voor beginners. Maar het eindresultaat maakt het goed: een sterke en geconcentreerde koffie, ongeveer tussen de sterkte van een normaal kopje en een espresso.</h3>
+        </article>
+    </section>
+
+    <section class="contentSection position4">
+        <article class="contentText textLeft">
+            <h2 class="contentHeading">Cold Brew</h2>
+            <h3 class="contentFont centerContent">Een unieke manier om koffie te zetten is de zogenaamde cold brew. Hierbij vul je een container met grof gemalen bonen en doe je hier water bij. Het brouwsel laat je vervolgens (afgesloten) in de koelkast staan voor ongeveer 24 uur. Tenslotte scheid je de koffie met een zeef van de drap op de bodem van de container en heb je een sterk koffieconcentraat.</h3> 
+            <h3 class="contentFont centerContent">Dit kan vervolgens aangevuld worden met melk, water of een andere vloeistof om een lekkere en verfrissende drank te maken. Eigenlijk heb je voor deze methode dus bijna niets nodig!</h3>
+        </article>
+        <section class="contentImg imgRight">
+            <img src="img/ColdBrew.png" alt="">
+        </section>
+    </section>
+    <!-- Einde content -->
+
+
+    <footer>
+        <a></a>
+        <a class="footerImageArea" href="index.html"><img class="footerImageArea" src="img/logo.png" alt="None"></a>
+        <section class="footerField footerFieldNavigatie">
+            <h3 class="footerFieldHead">Navigatie</h3>
+                <ol class="footerList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="waarom.html">Waarom koffie zetten</a></li>
+                    <li><a href="brouwen.html">Koffiezetmethoden</a></li>
+                    <li><a href="bonen.html">Soorten</a></li>
+                    <li><a href="malen.html">Maalmethodes</a></li>
+                </ol>
+        </section>
+        <section class="footerField footerFieldOverige">
+            <h3 class="footerFieldHead">Overige</h3>
+                <ol class="footerList">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/privacyregels-beschermen-persoonsgegevens">Privacyvoorwaarden</a></li>
+                </ol>
+                <p author="Milo Wassenaar">© 2025 [744647]. All rights reserved.</p>
+        </section>
+        <section class="footerField footerFieldSocials">
+            <h3 class="footerFieldHead">Bezoek de socials</h3>
+            <section class="footerSocialsImageSection">
+                <a href="https://x.com" target="_blank"><img class="footerSocialsImage" src="img/IconX.png" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="footerSocialsImage" src="img/IconInstagram.png" alt=""></a>
+                <a href="https://www.youtube.com" target="_blank"><img class="footerSocialsImage" src="img/IconYoutube.png" alt=""></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="footerSocialsImage" src="img/IconLinkedin.png" alt=""></a>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

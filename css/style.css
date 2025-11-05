@@ -1,0 +1,787 @@
+   body {
+        margin: 0;
+        background-color: #F2E8E0;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+        grid-template-rows: auto 5% auto auto auto auto auto auto auto auto 5% auto;
+        column-gap: 10px;
+    }
+
+    /* Het koekje */
+    dialog {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        font-family: sans-serif;
+    }
+
+    .cookieButton {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border: none;
+        background-color: #D02E31;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .cookieButton:hover {
+        background-color: #99292B;
+    }
+
+
+
+    /* Header / Footer */
+
+    header {
+        grid-column: 1 / 6; /* over de hele lengte */
+        background-color: #D5B78F;
+
+        height: 100px;
+        width: auto;
+
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        top: 0;
+        position: sticky;
+
+        display: grid; /* Nested grid */
+        grid-template-columns: 15% 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 10px;
+    }
+
+    .headerImageArea {
+        width: 80%;
+        height: auto;
+        background: #FFFBF7;
+        border-radius: 0px 0px 40px 0px;
+    }
+
+    .headerImage {
+        height: 100px;
+        width: 100px;
+        border-radius: 0px 0px 40px 0px;
+    }
+
+    footer {
+        grid-column: 1 / 6; /* over de hele lengte */
+        grid-row: 11 / 12;
+        background-color: #D5B78F;
+
+        height: 200px;
+        width: auto;
+
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+
+        display: grid; /* Nested grid */
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+        gap: 15px;
+    }
+
+    .footerImageArea {
+        width: 150px;
+        height: 150px;
+        border-radius: 0px 40px 40px 40px;
+        background: #FFFBF7;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerField {
+        width: 225px;
+        height: 150px;
+        background: #E6DDD6;
+        border-radius: 0px 20px 20px 20px;
+
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 25px;
+    }
+
+    .footerFieldOverige {
+        height: 100px;
+    }
+
+    .footerFieldSocials {
+        height: 100px;
+    }
+
+    .footerSocialsImage { 
+        width: 35px;
+        height: auto;
+    }
+
+    .footerSocialsImageSection {
+        display: flex;
+        justify-content: space-between; /* distributes images across width */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footerFieldHead {
+        width: 100%;
+        height: auto;
+        background-color: #FFFBF7;
+        border-radius: 0px 20px 20px 20px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 5px
+    }
+    .asideAdSpace {
+        grid-row: 4 / 8;
+        height: auto;
+        width: auto;
+    }
+
+    /* Fonts */
+
+    p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    a:visited { 
+        color: #99292B; 
+    }
+
+    h1 {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        color: #4D3430;
+        margin: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-indent: 0;
+    }
+
+    h2 {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        color: #4D3430;
+        margin: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-indent: 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #4D3430;
+        margin: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-indent: 0;
+    }
+
+    h4 {
+        font-size: 16px;
+        color: #4D3430;
+        margin: auto;
+        font-weight: 100;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-indent: 0;
+    }
+
+    h5 {
+        font-size: 12px;
+        color: #4D3430;
+        margin: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-indent: 0;
+    }
+
+    .footerList {
+        font-size: 16px;
+        color: #4D3430;
+        margin-top: 1px;
+        font-weight: 100;
+    }
+
+    .footerList li {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    
+    .buttonColour {
+        color: #FFFBF7;
+        text-decoration: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .footerField {
+            width: 180px;
+        }
+
+        .footerList {
+            font-size: 14px;
+        }
+
+        .footerSocialsImage { 
+            width: 35px;
+            height: auto;
+        }
+
+    }
+
+
+    /* Buttons */
+    .headerButton {
+        background-color: #D02E31;
+        border: none;
+        outline: none;
+        
+        width: 90%;
+        height: 70%;
+        border-radius: 0px 25px 25px 25px;
+        align-self: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        cursor: pointer;
+    }
+
+    .headerButtonDropdown {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .headerButton:hover, .contentButton:hover, .contactButton:hover, .headerButtonCurrent {
+        background-color: #99292B;
+    }
+
+    .contentButton {
+        background-color: #D02E31;
+        border: none;
+        outline: none;
+        
+        width: 300px;
+        height: 100px;
+        margin: 0 auto 25px auto;
+        border-radius: 0px 25px 25px 25px;
+        align-self: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        cursor: pointer;
+    }
+
+    /* Content blokken */
+    .position1 { /* Voor de pagina introductie */
+        grid-row: 2 / 4; 
+    }
+
+    .position2 {
+        grid-row: 4 / 5; 
+    }
+    
+    .position3 {
+        grid-row: 5 / 6; 
+    }
+    
+    .position4 {
+        grid-row: 7 / 8; 
+    }
+
+    .position5 {
+        grid-row: 8 / 9; 
+    }
+
+    .position6 {
+        grid-row: 9 / 10; 
+    }
+
+    .introductionContainer {
+        width: auto;
+        height: 300px;
+        background-image: url("../img/IntroductionBanner.png");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 1 / 6;
+        margin-bottom: 40px;
+
+        padding: 100px 100px 0px 100px ;
+        text-align: center;
+    }
+
+    .contentSection {
+        grid-column: 2 / 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        margin-bottom: 40px;
+        /* background-color: aqua; */
+    }
+
+    .centerContent {
+        margin: 25px;
+    }
+    
+    .centerContentHome {
+        margin: 25px;
+    }
+
+    .imgBlock {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentText {
+        background-color: #E6DDD6;
+        border-color: #D2C8C1;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        padding-bottom: 10px;
+    }
+
+    .contentHeading {
+        background: #FFFBF7;
+        border-color: #D2C8C1;
+        border-radius: 10px 10px 0px 0px;
+        border-style: double;
+        border-width: 10px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .textRight {
+        grid-column: 6 / 11;
+    }
+
+    .textLeft {
+        grid-column: 1 / 6;
+    }
+
+    .textFull {
+        grid-column: 1 / 11;
+    }
+
+    .contentImg {
+        background-image: url("../img/BonenBannerVerticaal.png") ;
+        border-color: #D2C8C1;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentImg img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .imgRight {
+        grid-column: 7 / 11;
+    }
+
+    .imgLeft {
+        grid-column: 1 / 5;
+    }
+
+    .homeContent {
+        width: auto;
+        height: 500px;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 1 / 6;
+
+        /* padding: 100px 100px 0px 100px ; */
+        text-align: center;
+        display: grid;
+        grid-template-columns: 15% auto 15% ;
+    }
+
+    .homeTextField {
+        grid-column: 2 / 3;
+        width: auto;
+        padding: 50px 50px 50px 50px ;
+        margin: 40 auto 40 auto;
+        background-color: #D8CEC7;
+        text-align: center;
+        border-radius: 0px 50px 0px 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .homeHeadingCenter {
+        grid-column: 2 / 3;
+        margin: auto;
+    }
+
+    .homeImageEntry {
+        background-image: url("../img/IntroductionBanner.png");
+    }
+
+    .homeImageFresh {
+        background-image: url("../img/VerseKoffieBanner.png");
+    }
+
+    .homeImageBeans {
+        background-image: url("../img/BonenStappelBanner.png");
+    }
+
+    .contactSection {
+        grid-column: 2 / 5;
+        grid-row: 4 / 8;
+
+        margin-bottom: 40px;
+        padding: 40px;
+
+        border-color: #D02E31;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 0px 50px 0px 50px;
+        background-color: #E6DDD6;
+    }
+
+    .formContact {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr auto;
+
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .stylingContact {
+        padding: 10px;
+        background-color: #FFFBF7;
+        border-color: #D2C8C1;
+        border-width: 5px;
+        border-style: solid;
+
+    }
+
+    .messageContact {
+        resize: none;
+    }
+
+    .labelContact {
+        grid-column: 1 / 2;
+    }
+
+    .inputContact {
+        grid-column: 2 / 3;
+    }
+
+    .contactUnderside {
+        grid-row: 6 / 7;
+        grid-column: 1 / 4;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .contactButton {
+        background-color: #D02E31;
+        border: none;
+        outline: none;
+        grid-column: 5 / 10;    
+        height: 120px;        
+        border-radius: 0px 25px 25px 25px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        cursor: pointer;
+    }
+
+    .checkboxHolder {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+    }
+
+    .contactCheckbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+    /* ------------------------------------ M O B I L E ------------------------------------ */
+
+    @media only screen and (max-width: 768px) {
+        body {
+            grid-template-columns: 2% 1fr 1fr 1fr 2%;
+            grid-template-rows: auto 2% auto auto auto auto auto auto auto auto 2% auto;
+        }
+        
+        p {
+            margin-top: 50px;
+            font-size: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+            
+        .headerButton {
+            display: none;
+        }
+
+        .nav {
+            grid-column: 5 / 9;
+        }
+
+        .homeImageEntry {
+            height: auto;
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        .headerButtonDropdown {
+            background-color: #D02E31;
+            border: none;
+            outline: none;
+        
+            width: 90%;
+            height: 70%;
+            border-radius: 0px 25px 25px 25px;
+            align-self: center;
+            margin-top: 15px;
+
+            display: Grid;
+            justify-content: center;
+            align-items: center; 
+
+            grid-column: 5 / 9;
+            grid-template-columns: 2fr 1fr;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+            list-style: none;
+            background-color: #D02E31;
+            position: absolute;
+            top: 40;
+            width: 20%;
+            padding: 30px;
+            border-radius: 0px 0px 25px 0px;
+        }
+
+        .menu li {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+                /* Show when checkbox is checked */
+        .menu-toggle:checked + .headerButtonDropdown + .menu {
+            display: block;
+        }
+
+
+        .introductionContainer {
+            /* width: 300px; */
+            width: auto;
+            height: auto;
+
+            margin: 0 auto 40px auto;
+            padding: 25px 50px 25px 50px ;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 405px) {
+            .introductionContainer {
+                width: 300px;
+            }
+        }
+
+
+        .contentSection {
+            grid-template-columns: auto 1fr auto;   
+            grid-template-rows: auto auto;
+            margin-bottom: 40px;
+        }
+
+        .contentText {
+            /* height: 300px; */
+            width: 300px;
+            justify-self: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .textRight,
+        .textLeft,
+        .textFull {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .contentImg {
+            height: auto;
+            width: 300px;
+            justify-self: center;
+            border-radius: 0px 0px 15px 15px;
+            border-top: none;
+        }
+
+        .contentImg img {
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .imgRight,
+        .imgLeft {
+            grid-column: 2 / 3  ;
+            grid-row: 2 / 3;
+        }
+
+        .homeTextField {
+            padding: 20px;
+        }
+
+        .contentButton {
+            margin: 20 auto 0px auto;
+            height: 75px;
+            width: 200px;
+        }
+
+        .centerContentHome {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contactUnderside {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .contactCheckbox {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .contactBoxText {
+            grid-column: 2 / 6;
+            grid-row: 1 / 2;
+            font-size: 20px;
+        }
+
+        .contactButton {
+            grid-column: 2 / 6;
+            grid-row: 2 / 3;
+        }
+
+
+        footer {
+            grid-column: 1 / 6; /* over de hele lengte */
+            background-color: #D5B78F;
+
+            height: 400px;
+            width: auto;
+
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+
+            display: grid; /* Nested grid */
+            grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .footerField {
+            width: 100%;
+            height: 150px;
+            background: #E6DDD6;
+            border-radius: 0px 20px 20px 20px;
+            grid-row: 1 / 2; 
+        }
+
+        .footerFieldHead {
+            width: 100%;
+            height: auto;
+            background-color: #FFFBF7;
+            border-radius: 0px 20px 20px 20px;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px
+        }
+
+        .footerFieldNavigatie {
+            grid-column: 2 / 3 ;
+        }
+
+        .footerFieldOverige {
+            grid-column: 3 / 4 ;
+            height: 100px;
+        }
+
+        .footerList {
+            font-size: 14px;
+            padding-left: 0px ;
+            list-style-type: none;
+        }
+
+        .footerFieldSocials {
+            width: 100%;
+            height: 120px;
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .footerImageArea {
+            display: none;
+        }
+
+        .footerSocialsImage { 
+            width: 50px;
+            height: auto;
+        }
+
+        .footerSocialsImageSection {
+            display: flex;
+            justify-content: space-between; /* distributes images across width */
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }

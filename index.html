@@ -1,0 +1,130 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoffieSite | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <a class="headerImageArea" href="index.html"><img class="headerImage" src="img/logo.png" alt="??????"></a>
+        <!-- Voor Desktop: -->
+        <button class="headerButton headerButtonCurrent" onclick="location.href='index.html'"><h2 class="buttonColour">Home</h2></button>
+        <button class="headerButton" onclick="location.href='waarom.html'"><h2 class="buttonColour">Waarom</h2 ></button>
+        <button class="headerButton" onclick="location.href='brouwen.html'"><h2 class="buttonColour">Brouwen</h2></button>
+        <button class="headerButton" onclick="location.href='bonen.html'"><h2 class="buttonColour">Bonen</h2></button>
+        <button class="headerButton" onclick="location.href='malen.html'"><h2 class="buttonColour">Malen</h2></button>
+        <a></a>
+        <button class="headerButton" onclick="location.href='contact.html'"><h2 class="buttonColour">Contact</h2></button>
+        <!-- Dropdown voor mobile -->
+        <nav class="nav" aria-label="Main">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="headerButtonDropdown">
+                <h2 class="buttonColour">Home</h2>
+                <h2 class="buttonColour">☰</h2>
+            </label>
+            <ul class="menu">
+                <li><a class="buttonColour" href="index.html"><em>Home</em></a></li>
+                <li><a class="buttonColour" href="waarom.html"><em>Waarom</em></a></li>
+                <li><a class="buttonColour" href="brouwen.html"><em>Brouwen</em></a></li>
+                <li><a class="buttonColour" href="bonen.html"><em>Bonen</em></a></li>
+                <li><a class="buttonColour" href="malen.html"><em>Malen</em></a></li>
+                <li><a class="buttonColour" href="contact.html"><em>Contact</em></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Het koekje -->
+    <dialog open>
+    🍪 We maken gebruik van cookies! U ook?
+    <form method="dialog">
+        <button class="cookieButton">Lekker</button>
+        <button class="cookieButton">Liever niet</button>
+    </form>
+    </dialog>
+
+    <!-- De content -->
+    <section class="homeContent position1 homeImageEntry">
+        <article  class="homeHeadingCenter">
+            <h1>De Kunst van Handgemaakte Koffie</h1>
+            <h2>Koffie, wat ooit begon als een luxeproduct is nu in bijna ieder huishouden te vinden. Waar de meeste mensen hun favoriete brouwsel met het koffiezetapparaat maken, zijn er ook die verder gaan en het meeste uit hun drank willen halen. Deze zetten hun koffie met de hand, maar hoe doet men dit dan?</h2>
+        </article>
+    </section>
+
+    <section class="homeContent position2">
+        <article class="homeTextField">
+            <h2 class="contentFont centerContentHome">Waarom koffie brouwen</h2>
+            <h3 class="contentFont centerContentHome">Leer mensen hun eigen koffie zetten, wat voor verschil dit maakt en hoe het zelfs voordelig kan zijn voor je portemonnee.</h3>
+            <button class="contentButton" onclick="location.href='waarom.html'"><h2 class="buttonColour">Waarom</h2 ></button>
+        </article>
+    </section>
+
+    <section class="homeContent position3 homeImageFresh">
+        <article class="homeTextField">
+            <h2 class="contentFont centerContentHome">Nieuwsgierig hoe mensen nu eigenlijk hun eigen koffie zetten?</h2>
+            <!-- <h3 class="contentFont centerContentHome">Leer waarom mensen hun eigen koffie zetten, wat voor verschil dit maakt en hoe het zelfs voordelig kan zijn voor je portemonnee.</h3> -->
+            <button class="contentButton" onclick="location.href='brouwen.html'"><h2 class="buttonColour">Brouwen</h2 ></button>
+        </article>
+    </section>
+
+    <section class="homeContent position4">
+        <article class="homeTextField">
+            <h2 class="contentFont centerContentHome">Ken je bonen</h2>
+            <h3 class="contentFont centerContentHome">Bonen zijn alles in de koffiewereld! Leer het verschil tussen de verschillende soorten bonen en hoe ze worden gebrand.</h3>
+            <button class="contentButton" onclick="location.href='bonen.html'"><h2 class="buttonColour">Bonen</h2 ></button>
+        </article>
+    </section>
+
+    <section class="homeContent position5 homeImageBeans">
+        <article class="homeTextField">
+            <h2 class="contentFont centerContentHome">Het malen van je bonen</h2>
+            <h3 class="contentFont centerContentHome">Elektrisch of met de hand? Kom erachter welke voordelen eraan hangen, en wat beter bij u past.</h3>
+            <button class="contentButton" onclick="location.href='malen.html'"><h2 class="buttonColour">Malen</h2 ></button>
+        </article>
+    </section>
+
+    <section class="homeContent position6">
+        <article class="homeTextField">
+            <h2 class="contentFont centerContentHome">Vragen? Neem contact met ons op!</h2>
+            <h3 class="contentFont centerContentHome">Leer waarom mensen hun eigen koffie zetten, wat voor verschil dit maakt en hoe het zelfs voordelig kan zijn voor je portemonnee.</h3>
+            <button class="contentButton" onclick="location.href='contact.html'"><h2 class="buttonColour">Contact</h2 ></button>
+        </article>
+    </section>
+    <!-- Einde content -->
+
+
+    <footer>
+        <a></a>
+        <a class="footerImageArea" href="index.html"><img class="footerImageArea" src="img/logo.png" alt="None"></a>
+        <section class="footerField footerFieldNavigatie">
+            <h3 class="footerFieldHead">Navigatie</h3>
+                <ol class="footerList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="waarom.html">Waarom koffie zetten</a></li>
+                    <li><a href="brouwen.html">Koffiezetmethoden</a></li>
+                    <li><a href="bonen.html">Soorten</a></li>
+                    <li><a href="malen.html">Maalmethodes</a></li>
+                </ol>
+        </section>
+        <section class="footerField footerFieldOverige">
+            <h3 class="footerFieldHead">Overige</h3>
+                <ol class="footerList">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a target="_blank" href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/privacyregels-beschermen-persoonsgegevens">Privacyvoorwaarden</a></li>
+                </ol>
+                <p author="Milo Wassenaar">© 2025 [744647]. All rights reserved.</p>
+        </section>
+        <section class="footerField footerFieldSocials">
+            <h3 class="footerFieldHead">Bezoek de socials</h3>
+            <section class="footerSocialsImageSection">
+                <a href="https://x.com" target="_blank"><img class="footerSocialsImage" src="img/IconX.png" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="footerSocialsImage" src="img/IconInstagram.png" alt=""></a>
+                <a href="https://www.youtube.com" target="_blank"><img class="footerSocialsImage" src="img/IconYoutube.png" alt=""></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="footerSocialsImage" src="img/IconLinkedin.png" alt=""></a>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
